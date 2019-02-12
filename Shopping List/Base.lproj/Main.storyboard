@@ -44,7 +44,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="glq-SV-OUg">
                         <nil key="title"/>
-                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="rH1-kD-DnW">
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="rH1-kD-DnW">
                             <rect key="frame" x="175" y="7" width="25" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <nil key="textColor"/>
@@ -59,7 +59,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="newItemTextView" destination="glq-SV-OUg" id="7Xv-PF-fDd"/>
-                        <outlet property="tabelView" destination="Ayb-mN-bdl" id="Yp8-Rb-OcK"/>
+                        <outlet property="tableView" destination="Q55-MC-qDd" id="jPp-eD-HQS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
