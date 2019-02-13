@@ -22,17 +22,21 @@ class ViewController: UIViewController, UITableViewDataSource {
         let itemOne = Item(name: "Kyle's hair is better")
         let itemTwo = Item(name: "Ryan's hair is worce")
         items = [itemOne, itemTwo]
+        let itemThree = Item(name: "Crackers")
+        items += [itemThree]
+
     }
 
     @IBAction func newItemButtonPress(_ sender: Any) {
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return items.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") {
-            cell.textLabel?.text = "Hello"
+            let itemName = items[indexPath.row].name
+            cell.textLabel?.text = itemName
             return cell
         } else {
             return UITableViewCell()

@@ -58,7 +58,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="newItem" destination="rH1-kD-DnW" id="JAp-Wa-L0k"/>
                         <outlet property="newItemTextView" destination="glq-SV-OUg" id="7Xv-PF-fDd"/>
                         <outlet property="tableView" destination="Q55-MC-qDd" id="jPp-eD-HQS"/>
                     </connections>
