@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
 
-    @IBOutlet var newItemTextView: UINavigationItem!
+    @IBOutlet var newItemTextView: UITextField!
     
     @IBOutlet var tableView: UITableView!
     
@@ -19,16 +19,20 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tableView.dataSource = self
         
-        let itemOne = Item(name: "Kyle's hair is better")
+        let itemOne = Item(name: "Kyle's hair is better", quantity: 2)
         let itemTwo = Item(name: "Ryan's hair is worce")
         items = [itemOne, itemTwo]
-        let itemThree = Item(name: "Crackers")
+        let itemThree = Item(name: "Fact")
         items += [itemThree]
 
     }
 
     @IBAction func newItemButtonPress(_ sender: Any) {
-        
+        if let newItemName = newItemTextView.text, newItemName != "" {
+            let newItem = Item(name: newItemName)
+            items.append(newItem)
+            tableView.reloadData()
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count

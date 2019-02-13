@@ -58,7 +58,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="newItemTextView" destination="glq-SV-OUg" id="7Xv-PF-fDd"/>
+                        <outlet property="newItemTextView" destination="rH1-kD-DnW" id="Nea-s7-6kS"/>
                         <outlet property="tableView" destination="Q55-MC-qDd" id="jPp-eD-HQS"/>
                     </connections>
                 </viewController>
