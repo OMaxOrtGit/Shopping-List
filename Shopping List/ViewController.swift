@@ -24,7 +24,6 @@ class ViewController: UIViewController, UITableViewDataSource {
         items = [itemOne, itemTwo]
         let itemThree = Item(name: "Fact")
         items += [itemThree]
-
     }
 
     @IBAction func newItemButtonPress(_ sender: Any) {
@@ -40,10 +39,20 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") {
             let itemName = items[indexPath.row].name
+            let itemQuantity = items[indexPath.row].quantity
             cell.textLabel?.text = itemName
+            cell.detailTextLabel?.text = "Quantity:\(itemQuantity)"
             return cell
         } else {
             return UITableViewCell()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let nvc = segue.destination as! SecondViewControler
+            let currentItem = items[indexPath.row]
+            nvc.passedItem = currentItem
         }
     }
 }

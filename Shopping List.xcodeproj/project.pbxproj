@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C417FAA522160EFD0097D3AF /* SecondViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C417FAA422160EFD0097D3AF /* SecondViewControler.swift */; };
 		C48AAB4B22136CC8001ABA27 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48AAB4A22136CC8001ABA27 /* Item.swift */; };
 		C4D33EF3220E234E002ADDD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D33EF2220E234E002ADDD5 /* AppDelegate.swift */; };
 		C4D33EF5220E234E002ADDD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D33EF4220E234E002ADDD5 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C417FAA422160EFD0097D3AF /* SecondViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControler.swift; sourceTree = "<group>"; };
 		C48AAB4A22136CC8001ABA27 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C4D33EEF220E234E002ADDD5 /* Shopping List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D33EF2220E234E002ADDD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				C4D33EF2220E234E002ADDD5 /* AppDelegate.swift */,
 				C4D33EF4220E234E002ADDD5 /* ViewController.swift */,
+				C417FAA422160EFD0097D3AF /* SecondViewControler.swift */,
 				C48AAB4A22136CC8001ABA27 /* Item.swift */,
 				C4D33EF6220E234E002ADDD5 /* Main.storyboard */,
 				C4D33EF9220E2354002ADDD5 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C417FAA522160EFD0097D3AF /* SecondViewControler.swift in Sources */,
 				C4D33EF5220E234E002ADDD5 /* ViewController.swift in Sources */,
 				C48AAB4B22136CC8001ABA27 /* Item.swift in Sources */,
 				C4D33EF3220E234E002ADDD5 /* AppDelegate.swift in Sources */,
